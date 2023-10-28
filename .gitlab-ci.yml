@@ -1,0 +1,50 @@
+#test_code_quality:
+#  stage: test
+#  image: "cirrusci/flutter:stable"
+#  before_script:
+#    - pub global activate dart_code_metrics
+#    - export PATH="$PATH":"$HOME/.pub-cache/bin"
+#  script:
+#    - metrics lib -r codeclimate  > gl-code-quality-report.json
+#  artifacts:
+#    reports:
+#      codequality: gl-code-quality-report.json
+#
+#build_development_apk_job:
+#  stage: build
+#  only:
+#    - development
+#  image: "cirrusci/flutter:stable"
+#  before_script:
+#    - pub global activate dart_code_metrics
+#    - export PATH="$PATH":"$HOME/.pub-cache/bin"
+#  script:
+#    - flutter packages get
+#    - flutter pub run intl_utils:generate
+#    - flutter build apk --release --dart-define=env=dev
+#
+#  artifacts:
+#    name: Flutter Template
+#    paths:
+#      - build/app/outputs/flutter-apk/app-release.apk
+#
+#
+#build_master_apk_job:
+#  stage: build
+#  only:
+#    - master
+#    - staging
+#  image: "cirrusci/flutter:stable"
+#  before_script:
+#    - pub global activate dart_code_metrics
+#    - export PATH="$PATH":"$HOME/.pub-cache/bin"
+#  script:
+#    - flutter packages get
+#    - flutter pub run intl_utils:generate
+#    - flutter build apk --release --dart-define=env=prod
+#    - flutter build apk appbundle --dart-define=env=prod
+#  artifacts:
+#    name: Flutter Template
+#    paths:
+#      - build/app/outputs/flutter-apk/app-release.apk
+#      - build/app/outputs/bundle/release/app-release.aab
