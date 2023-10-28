@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1047854581243",
+    "project_id": "platemate-ff89d",
+    "storage_bucket": "platemate-ff89d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047854581243:android:0a5a630f205f8bd1beb75e",
+        "android_client_info": {
+          "package_name": "com.platemate.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047854581243-s0re1r4vnt3lp6qubochtdgv2knv9sv5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLv8gxAUk5PxdwQlxEAFOAyp3MW9YhN8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047854581243-s0re1r4vnt3lp6qubochtdgv2knv9sv5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PlateMate</string>
+    <string name="facebook_app_id">854873562375317</string>
+    <string name="fb_login_protocol_scheme">fb854873562375317</string>
+</resources>
